@@ -20,4 +20,3 @@ if st.button('Predict AQI'):
     input_data = np.array([[pm25, pm10, no2, so2, co, o3]])
     prediction = model.predict(input_data)
     st.success(f'Predicted AQI: {prediction[0]:.2f}')
-  
